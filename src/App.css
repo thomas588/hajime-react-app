@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-color: #f8f8f8;
+}
+.nav_li > a {
+  color: white;
+  font-weight: 600;
+  font-family: monospace;
+  text-decoration: none;
+}
+.nav_li > a:hover {
+  color: white;
+  font-weight: 600;
+  font-family: monospace;
+  text-decoration: none;
+}
+.app-wrapper {
+  min-height: 115vh;
+  width: 100%;
+  background-image: url('./logo/mountains2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+header {
+  height: 110px;
+  background-color: black;
+  margin: 25px;
+}
+header img {
+  height: 110px;
+  width: 110px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35px;
+}
+a {
+  font-size: 24px;
+}
+.nav_li {
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+}
+.nav_li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: width 0.3s cubic-bezier(0, 1.79, 1, -0.49);
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+}
+.nav_li:hover:after,
+.nav_li:focus:after {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 65px;
+}
+.card {
+  height: 360px;
+  width: 320px;
+  background-color: #f8f8f8;
+}
+.card:hover {
+  height: 360px;
+  width: 320px;
+  background-color: white;
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.453);
+  transition: ease-in-out 0.2s;
+  border: 0.5px solid black;
+}
+.cards > .card> a > b {
+  text-decoration: none;
+}
+p ,b {
+  color: black;
+}
+.card > a > img ,b {
+  margin: 10px;
+}
+/* Section */
+.section-1,.section-3 {
+  width: 100%;
+  height: 100vh;
+}
+.section-1 {
+  background: url('./logo/maA.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-3 {
+  background: url('./logo/allHajime.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-2 {
+  background-color: rgb(24 24 24);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+.carousel {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+margin-bottom: 54px;
+}
+.carousel > .car{
+  margin: 45px;
+}
+.pi {
+  margin-top: 45px;
+  text-align: center;
+  font-weight:200;
+  font-size: 35px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
